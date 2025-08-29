@@ -1,69 +1,58 @@
-# React + TypeScript + Vite
+# Web Development with React - Course Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains all course materials and exercises for the web development React course. All exercises will be created within this single Vite-React project.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Initial Setup
+1. Clone this repository to your local machine:
+   ```bash
+   git clone [repository-url]
+   cd din24-web-dev-frameworks
+   ```
 
-## Expanding the ESLint configuration
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### During the Course
+- **You only need to clone once** - after the initial setup, simply pull updates to get new lesson materials:
+  ```bash
+  git pull
+  ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- After pulling updates, you may need to install new dependencies:
+  ```bash
+  npm install
+  ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Course Structure
+All course exercises and lessons will be added to this project progressively. Each lesson's materials will be organized within the existing Vite-React structure.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development Commands
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Important Notes
+- Always pull the latest changes before starting a new lesson
+- Keep your local changes in separate branches if you want to preserve your work
+- The main branch will contain the official course materials and solutions
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Happy coding! 🚀
+
+---
+
+## Technical Details
+
+This project uses:
+- **React** with **TypeScript** 
+- **Vite** for fast development and building
+- **ESLint** for code quality
