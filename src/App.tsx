@@ -1,38 +1,33 @@
 import './App.css'
 import ColorList from './ExerciseSet2/ColorList';
 import ContactItem from './ExerciseSet2/ContactItem';
+import Greeter from './ExerciseSet3/1Greeter';
+import ContactList from './ExerciseSet3/4ContactList';
 
-function getGreeting() {
-  return "Welcome to the world of React";
-}
-
-function Header() {
-  return <h1>Welcome to My App!</h1>
-}
 
 function App() {
-  
-  let a = 5;
-  let b = 7;
-  let c = a + b;
-
-  const colors = [<p>red</p>, <p>green</p>, <p>blue</p>, <p>yellow</p>];
-
-  const numbers = [1, 2, 3, 4, 5];
-
-  const squaredJSXOutput = [];
-  for (let i = 0; i < numbers.length; i++) {
-    squaredJSXOutput.push(<p>{ numbers[i] } squared is { numbers[i] * numbers[i] }</p>);
-  }
 
   const names = ["Alice", "Bob", "Charlie"];
 
+  const contactData = [
+    { name: "Alice", address: "Wonderland 1" },
+    { name: "Bob", address: "Builder street 2" },
+    { name: "Charlie", address: "Chocolate factory 3" }
+  ];
+
   return (
     <>
+      <ContactList contactData={contactData}/>
+
+      <Greeter name="Lasse"/>
+      <Greeter name="Jonas"/>
+      <Greeter name="Max"/>
+      {/* 
+      Lesson 3 things below*/}
       <h2>Exercise set 2, exercise 3 - contact item</h2>
       <ContactItem name="Goofy" address="Disney road 1"/>
       <ContactItem name="Bob" address="Golf way 45"/>
-      <ContactItem name="Charlie" address="Hobo road 87"/>
+      <ContactItem name="Charlie" address="Hobo road 87"/> 
 
       {/* <h1>Hello World</h1>
       <ColorList />
