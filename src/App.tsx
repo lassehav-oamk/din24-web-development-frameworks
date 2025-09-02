@@ -5,6 +5,7 @@ import Greeter from './ExerciseSet3/1Greeter';
 import ContactList from './ExerciseSet3/4ContactList';
 import UserNameDisplay from './Lesson5Typescript/UserNameDisplay';
 import UserDataDisplay from './Lesson5Typescript/UserDataDisplay';
+import ConsoleButton from './ExerciseSet4/1ConsoleButton';
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
 
   return (
     <>
+      <ConsoleButton consoleText="Jippikay yei!"/>
+      <ConsoleButton consoleText="Hello World!"/>
+      
       <UserNameDisplay firstName={user.firstName} lastName={user.lastName} age={user.age}/>
       <UserNameDisplay {...user}/>
       <UserDataDisplay userData={user}/>
