@@ -3,6 +3,8 @@ import ColorList from './ExerciseSet2/ColorList';
 import ContactItem from './ExerciseSet2/ContactItem';
 import Greeter from './ExerciseSet3/1Greeter';
 import ContactList from './ExerciseSet3/4ContactList';
+import UserNameDisplay from './Lesson5Typescript/UserNameDisplay';
+import UserDataDisplay from './Lesson5Typescript/UserDataDisplay';
 
 
 function App() {
@@ -15,8 +17,18 @@ function App() {
     { name: "Charlie", address: "Chocolate factory 3" }
   ];
 
+  const user = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30
+  }
+
   return (
     <>
+      <UserNameDisplay firstName={user.firstName} lastName={user.lastName} age={user.age}/>
+      <UserNameDisplay {...user}/>
+      <UserDataDisplay userData={user}/>
+
       <ContactList contactData={contactData}/>
 
       <Greeter name="Lasse"/>
