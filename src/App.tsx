@@ -6,6 +6,10 @@ import ContactList from './ExerciseSet3/4ContactList';
 import UserNameDisplay from './Lesson5Typescript/UserNameDisplay';
 import UserDataDisplay from './Lesson5Typescript/UserDataDisplay';
 import ConsoleButton from './ExerciseSet4/1ConsoleButton';
+import ClickCounter from './ExerciseSet5/ClickCounter';
+import StateExample from './ExerciseSet5/StateExample';
+import ColorChange from './ExerciseSet5/ColorChange';
+import TextToggler from './ExerciseSet5/TextToggler';
 
 
 function App() {
@@ -26,6 +30,12 @@ function App() {
 
   return (
     <>
+      <TextToggler />
+      <ColorChange defaultColor='black' hoverColor='red'/>
+      <ColorChange defaultColor='blue' hoverColor='green'/>
+      <ClickCounter />
+      <StateExample />
+
       <ConsoleButton consoleText="Jippikay yei!"/>
       <ConsoleButton consoleText="Hello World!"/>
       
