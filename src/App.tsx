@@ -10,7 +10,7 @@ import ClickCounter from './ExerciseSet5/ClickCounter';
 import StateExample from './ExerciseSet5/StateExample';
 import ColorChange from './ExerciseSet5/ColorChange';
 import TextToggler from './ExerciseSet5/TextToggler';
-import Exercise6 from './ExerciseSet5/Exercise6';
+import Exercise6b from './ExerciseSet5/Exercise6b';
 
 
 function App() {
@@ -31,8 +31,8 @@ function App() {
 
   return (
     <>
-      <Exercise6 />
-      
+      <Exercise6b />
+
       {/* <TextToggler />
       <ColorChange defaultColor='black' hoverColor='red'/>
       <ColorChange defaultColor='blue' hoverColor='green'/>
