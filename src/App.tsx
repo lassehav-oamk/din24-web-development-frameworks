@@ -10,6 +10,7 @@ import ClickCounter from './ExerciseSet5/ClickCounter';
 import StateExample from './ExerciseSet5/StateExample';
 import ColorChange from './ExerciseSet5/ColorChange';
 import TextToggler from './ExerciseSet5/TextToggler';
+import Exercise6 from './ExerciseSet5/Exercise6';
 
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
 
   return (
     <>
-      <TextToggler />
+      <Exercise6 />
+      
+      {/* <TextToggler />
       <ColorChange defaultColor='black' hoverColor='red'/>
       <ColorChange defaultColor='blue' hoverColor='green'/>
       <ClickCounter />
@@ -47,13 +50,13 @@ function App() {
 
       <Greeter name="Lasse"/>
       <Greeter name="Jonas"/>
-      <Greeter name="Max"/>
+      <Greeter name="Max"/>*/}
       {/* 
       Lesson 3 things below*/}
-      <h2>Exercise set 2, exercise 3 - contact item</h2>
+      {/* <h2>Exercise set 2, exercise 3 - contact item</h2>
       <ContactItem name="Goofy" address="Disney road 1"/>
       <ContactItem name="Bob" address="Golf way 45"/>
-      <ContactItem name="Charlie" address="Hobo road 87"/> 
+      <ContactItem name="Charlie" address="Hobo road 87"/>  */} 
 
       {/* <h1>Hello World</h1>
       <ColorList />
