@@ -20,8 +20,14 @@ export default function Exercise6c() {
             // validation fails
             setValidationErrorVisible(true);
         } else {
-            // validation ok
-            setSaveButtonClicked(true)
+            // validation ok for @ sign, next check if there is text on left and right side of @
+            const parts = email.split('@');
+            if(parts.length >= 2 && parts[0].length > 0 && parts[1].length > 0) {
+                // now the whole validation logic has completed and passed
+                setSaveButtonClicked(true)
+            } else {
+                setValidationErrorVisible(true);
+            }
         }
     }
 
@@ -29,7 +35,7 @@ export default function Exercise6c() {
     if(saveButtonClicked === false) {
         let errorMessage;
         if(validationErrorVisible) {
-            errorMessage = <div style={{ color: 'red' }}>Email field error, @ character missing</div>
+            errorMessage = <div style={{ color: 'red' }}>Email field error, you must enter proper email address (for example john@doe.com)</div>
         }
 
         output = <div>
