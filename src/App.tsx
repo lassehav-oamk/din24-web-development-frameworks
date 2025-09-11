@@ -12,6 +12,9 @@ import ColorChange from './ExerciseSet5/ColorChange';
 import TextToggler from './ExerciseSet5/TextToggler';
 import Exercise6c from './ExerciseSet5/Exercise6c';
 import Exercise10 from './ExerciseSet5/Exercise10';
+import { Route } from 'react-router';
+import Exercise11 from './ExerciseSet5/Exercise11';
+
 
 
 function App() {
@@ -32,7 +35,8 @@ function App() {
 
   return (
     <>
-      <Exercise10 />
+      {/* <RouterDemo /> */}
+      <Exercise11 /> 
       {/* <Exercise6c /> */}
 
       {/* <TextToggler />
