@@ -14,6 +14,7 @@ import Exercise6c from './ExerciseSet5/Exercise6c';
 import Exercise10 from './ExerciseSet5/Exercise10';
 import { Route } from 'react-router';
 import Exercise11 from './ExerciseSet5/Exercise11';
+import RouterDemo from './RouterDemo/RouterDemo';
 
 
 
@@ -35,8 +36,8 @@ function App() {
 
   return (
     <>
-      {/* <RouterDemo /> */}
-      <Exercise11 /> 
+      <RouterDemo />
+      {/* <Exercise11 />  */}
       {/* <Exercise6c /> */}
 
       {/* <TextToggler />
