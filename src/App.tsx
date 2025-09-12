@@ -15,6 +15,8 @@ import Exercise10 from './ExerciseSet5/Exercise10';
 import { Route } from 'react-router';
 import Exercise11 from './ExerciseSet5/Exercise11';
 import RouterDemo from './RouterDemo/RouterDemo';
+import RouterDemoWCommonState from './RouterDemoWCommonState/RouterDemoWCommonState';
+import RouterLayoutRouteDemo from './RouterLayoutRouteDemo/RouterLayoutRouteDemo';
 
 
 
@@ -36,7 +38,9 @@ function App() {
 
   return (
     <>
-      <RouterDemo />
+      <RouterLayoutRouteDemo />
+      {/* <RouterDemoWCommonState /> */}
+      {/* <RouterDemo /> */}
       {/* <Exercise11 />  */}
       {/* <Exercise6c /> */}
 

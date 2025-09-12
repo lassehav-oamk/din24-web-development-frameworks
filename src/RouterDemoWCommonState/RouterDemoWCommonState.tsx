@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import ViewA from './views/ViewA';
@@ -5,25 +6,30 @@ import ViewB from './views/ViewB';
 import ViewC from './views/ViewC';
 
 
-export default function RouterDemo() {
+export default function RouterDemoWCommonState() {
+
+  const [clickCount, setClickCount] = useState(0);
 
   const router = createBrowserRouter([
     {
       path: "/",
       //element: <div>Hello Router World</div>,
-      Component: ViewA,
+      element: <ViewA clickCount={clickCount} />,
     },
     {
       path: "/view-b",
-      Component: ViewB
+      element: <ViewB />
     },
     {
       path: "/view-c",
-      Component: ViewC
+      element: <ViewC clickCount={clickCount} increaseClickCount={() => setClickCount(c => c + 1)} />
     }
   ]);
+
 
   return (
     <RouterProvider router={router} />
   )
 }
+
+
