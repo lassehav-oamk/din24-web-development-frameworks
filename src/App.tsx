@@ -17,8 +17,8 @@ import Exercise11 from './ExerciseSet5/Exercise11';
 import RouterDemo from './RouterDemo/RouterDemo';
 import RouterDemoWCommonState from './RouterDemoWCommonState/RouterDemoWCommonState';
 import RouterLayoutRouteDemo from './RouterLayoutRouteDemo/RouterLayoutRouteDemo';
-
-
+import Ex61RestaurantMenu from './ExerciseSet6/Ex61RestaurantMenu';
+import RouterDynamicSegment from './RouterDynamicSegment/RouterDynamicSegment';
 
 function App() {
 
@@ -38,7 +38,9 @@ function App() {
 
   return (
     <>
-      <RouterLayoutRouteDemo />
+      <RouterDynamicSegment />
+      {/* <Ex61RestaurantMenu /> */}
+      {/* <RouterLayoutRouteDemo /> */}
       {/* <RouterDemoWCommonState /> */}
       {/* <RouterDemo /> */}
       {/* <Exercise11 />  */}
