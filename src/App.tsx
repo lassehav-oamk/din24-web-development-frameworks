@@ -19,6 +19,8 @@ import RouterDemoWCommonState from './RouterDemoWCommonState/RouterDemoWCommonSt
 import RouterLayoutRouteDemo from './RouterLayoutRouteDemo/RouterLayoutRouteDemo';
 import Ex61RestaurantMenu from './ExerciseSet6/Ex61RestaurantMenu';
 import RouterDynamicSegment from './RouterDynamicSegment/RouterDynamicSegment';
+import LessonE61 from './Exercise61LessonExample/LessonE61';
+import Ex64DynamicRouteSegment from './ExerciseSet6/Ex64DynamicRouteSegment';
 
 function App() {
 
@@ -38,7 +40,9 @@ function App() {
 
   return (
     <>
-      <RouterDynamicSegment />
+      <Ex64DynamicRouteSegment/>
+      {/* <LessonE61 /> */}
+       {/* <RouterDynamicSegment />  */}
       {/* <Ex61RestaurantMenu /> */}
       {/* <RouterLayoutRouteDemo /> */}
       {/* <RouterDemoWCommonState /> */}
