@@ -21,6 +21,8 @@ import Ex61RestaurantMenu from './ExerciseSet6/Ex61RestaurantMenu';
 import RouterDynamicSegment from './RouterDynamicSegment/RouterDynamicSegment';
 import LessonE61 from './Exercise61LessonExample/LessonE61';
 import Ex64DynamicRouteSegment from './ExerciseSet6/Ex64DynamicRouteSegment';
+import Ex82AddBooksToList from './ExerciseSet8/Ex82AddBooksToList';
+import Ex83BookFiltering from './ExerciseSet8/Ex83BookFiltering';
 
 function App() {
 
@@ -40,7 +42,9 @@ function App() {
 
   return (
     <>
-      <Ex64DynamicRouteSegment/>
+      <Ex83BookFiltering  />
+      {/* <Ex82AddBooksToList /> */}
+      {/* <Ex64DynamicRouteSegment/> */}
       {/* <LessonE61 /> */}
        {/* <RouterDynamicSegment />  */}
       {/* <Ex61RestaurantMenu /> */}
