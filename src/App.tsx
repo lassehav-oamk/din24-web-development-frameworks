@@ -23,6 +23,9 @@ import LessonE61 from './Exercise61LessonExample/LessonE61';
 import Ex64DynamicRouteSegment from './ExerciseSet6/Ex64DynamicRouteSegment';
 import Ex82AddBooksToList from './ExerciseSet8/Ex82AddBooksToList';
 import Ex83BookFiltering from './ExerciseSet8/Ex83BookFiltering';
+import Ex71HelloAssetWorld from './ExerciseSet7/Ex71HelloAssetWorld';
+import Ex72MenuExercise from './ExerciseSet7/Ex72MenuExercise';
+import Ex92UncontrolledForm from './ExerciseSet9/Ex92UncontrolledForm';
 
 function App() {
 
@@ -42,7 +45,10 @@ function App() {
 
   return (
     <>
-      <Ex83BookFiltering  />
+      <Ex92UncontrolledForm />
+      {/* <Ex72MenuExercise /> */}
+      {/* <Ex71HelloAssetWorld /> */}
+      {/* <Ex83BookFiltering  /> */}
       {/* <Ex82AddBooksToList /> */}
       {/* <Ex64DynamicRouteSegment/> */}
       {/* <LessonE61 /> */}
