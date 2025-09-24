@@ -26,6 +26,8 @@ import Ex83BookFiltering from './ExerciseSet8/Ex83BookFiltering';
 import Ex71HelloAssetWorld from './ExerciseSet7/Ex71HelloAssetWorld';
 import Ex72MenuExercise from './ExerciseSet7/Ex72MenuExercise';
 import Ex92UncontrolledForm from './ExerciseSet9/Ex92UncontrolledForm';
+import Ex101UseEffectRandomQuote from './ExerciseSet10/Ex101UseEffectRandomQuote';
+
 
 function App() {
 
@@ -45,7 +47,8 @@ function App() {
 
   return (
     <>
-      <Ex92UncontrolledForm />
+      <Ex101UseEffectRandomQuote />
+      {/* <Ex92UncontrolledForm /> */}
       {/* <Ex72MenuExercise /> */}
       {/* <Ex71HelloAssetWorld /> */}
       {/* <Ex83BookFiltering  /> */}
