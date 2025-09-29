@@ -27,6 +27,7 @@ import Ex71HelloAssetWorld from './ExerciseSet7/Ex71HelloAssetWorld';
 import Ex72MenuExercise from './ExerciseSet7/Ex72MenuExercise';
 import Ex92UncontrolledForm from './ExerciseSet9/Ex92UncontrolledForm';
 import Ex101UseEffectRandomQuote from './ExerciseSet10/Ex101UseEffectRandomQuote';
+import RecipeApiDemo from './RecipeApiDemo/RecipeApiDemo';
 
 
 function App() {
@@ -47,7 +48,8 @@ function App() {
 
   return (
     <>
-      <Ex101UseEffectRandomQuote />
+      <RecipeApiDemo />
+      {/* <Ex101UseEffectRandomQuote /> */}
       {/* <Ex92UncontrolledForm /> */}
       {/* <Ex72MenuExercise /> */}
       {/* <Ex71HelloAssetWorld /> */}
